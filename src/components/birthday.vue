@@ -6,11 +6,12 @@
             <div class="flex flex-wrap text-center justify-center mx-auto absolute pattern-vertical-lines-xl text-gray-300 h-full">
                 <div class="w-full md:w-1/2">
                     <div class="mx-auto pt-20">
-                        <g-image src="../assets/images/birthday.svg" id="bImg"></g-image>
+                        <g-image src="../assets/images/birthday.svg"  id="bImg" class="hidden md:block"></g-image>
+                        <g-image src="../assets/images/birthday.svg"  class="mx-auto h-64 w-64 md:hidden"></g-image>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2">
-                    <div class="pt-20 pr-16">
+                    <div class="mx-auto">
                         <div class="flex flex-wrap items-center">
                             <div class="w-1/3">
                                 <div class="flex mx-auto">
@@ -21,8 +22,8 @@
                                 <p class="text-3xl text-gray-800 font-bday"><span class="text-gray-800 underline">May 10th, 2020</span></p>
                             </div>
                         </div>
-                        <p class="text-5xl text-gray-800 font-bday">Many Many Happy Return Of The Day <span class="text-red-500"> Saurabh...</span></p>
-                        <p class="text-5xl font-bday bg-yellow-400 shadow-2xl inline-block rounded-lg px-4 mt-6"> <span class="text-red-500 underline"> Happy 23rd Birthday!</span></p>
+                        <p class="text-4xl md:text-5xl text-gray-800 font-bday">Many Many Happy Return Of The Day <span class="text-red-500"> Saurabh...</span></p>
+                        <p class="text-3xl md:text-5xl font-bday bg-yellow-400 shadow-2xl inline-block rounded-lg px-4 mt-6"> <span class="text-red-500 underline"> Happy 23rd Birthday!</span></p>
                     </div>
                     <g-link to="/video">
                         <button class="bg-green-700 px-4 py-1 mt-10 rounded-md font-light">Click Here to See More..</button>
@@ -145,6 +146,9 @@ export default {
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+body{
+    background: #ffc800;
+}
 h1 {
   position: absolute;
   margin-top: 30vh;
